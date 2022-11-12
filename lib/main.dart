@@ -25,7 +25,7 @@ class AppInit extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      theme: Provider.of<ToDoClass>(context, listen: false).isDark
+      theme: Provider.of<ToDoClass>(context).isDark
           ? ThemeData.dark()
           : ThemeData.light(),
       title: 'gsk',

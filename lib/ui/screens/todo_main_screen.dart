@@ -17,6 +17,7 @@ class TodoMainScreen extends StatelessWidget {
                 onPressed: () {
                   Provider.of<ToDoClass>(context, listen: false)
                       .changeIsDarkMode();
+                  print(Provider.of<ToDoClass>(context,listen: false).isDark);
                 },
                 icon: Icon(Provider.of<ToDoClass>(context).isDark
                     ? Icons.light_mode
