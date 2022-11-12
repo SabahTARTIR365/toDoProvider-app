@@ -3,8 +3,12 @@ import 'package:provider/provider.dart';
 import 'package:todo_dp_provider_app/providers/todo_provider.dart';
 import 'package:todo_dp_provider_app/ui/screens/todo_main_screen.dart';
 
-void main() {
-  runApp( MyApp());
+import 'data_reposotory/dbl_helper.dart';
+
+void main() async{
+ WidgetsFlutterBinding.ensureInitialized();
+ await DbHelper.dpHelper.initDataBase();
+ runApp( MyApp());
 }
 
 

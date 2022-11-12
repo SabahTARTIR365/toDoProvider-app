@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 
 class ToDoClass extends ChangeNotifier {
-  bool isDark = false;
+  late bool isDark = false;
   changeIsDarkMode() {
     isDark = !isDark;
     notifyListeners();
   }
 
-  bool isAccepted = false;
+ late  bool isAccepted = false;
   changeIsAccepted() {
     isAccepted = !isAccepted;
     notifyListeners();
